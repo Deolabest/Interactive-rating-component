@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: #fff;
+    --grey: hsl(213, 20%, 22%);
+    --dark-grey: hsl(217, 12%, 63%);
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 0.94rem;
+    background-color: hsl(216, 12%, 8%);
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+ul li button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--grey);
+    color: var(--white);
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li button:hover {
+    background-color: var(--orange);
+}
+
+ul li button:focus {
+    background-color: var(--dark-grey);
+}
+
+.container, .thanks {
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    max-width: 400px;
+}
+
+.container img {
+    background-color: var(--grey);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--white);
+    margin: 2rem 0 1rem;
+}
+
+.container p {
+    color: var(--dark-grey);
+    margin-bottom: 1rem;
+}
+
+.submit-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 0.8rem 0 0.7rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gray {
+    background-color: var(--grey);
+    color: var(--orange) !important;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    padding: 0.2rem 0.5rem 0;
+    margin: 1rem 0 1rem 0;
+}
+
+.user-rate {
+    color: var(--white);
+}
+
+h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.thanks p {
+    color: var(--dark-grey);
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
